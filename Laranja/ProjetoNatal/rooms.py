@@ -106,7 +106,10 @@ class Stable(Room):
 
 class Library(Room):
     def __init__(self):
-        super().__init__(""" <TEXTO AQUI> """)
+        super().__init__(
+            """
+            Encontras-te numa sala cheio de livros..
+            """)
 
     def start(self):
         print(self.description)
@@ -161,8 +164,9 @@ class Gate(Room):
 
 class SantaClausOffice(Room):
     def __init__(self):
-        super().__init__(""" <TEXTO AQUI> """)
+        super().__init__(""" E  SOU O KRAMPUS E DESAFIO-TE PARA UM JOGO DE SORTE PELO NATAL""")
 
     def start(self):
         print(self.description)
+        utils.boss_fight()
         return
