@@ -22,6 +22,17 @@ def get_direction():
 
 def boss_fight():
     score = 0
-    print("")
     while score <= 3:
-        print("randomint(1,10)")
+        first_number = random.randint(1,10)
+        print(krampus_number)
+        guess = input("maior ou menor?")
+        second_number = random.randint(1,10)
+        if guess == "maior" and first_number < second_number:
+            score =+ 1
+        elif guess == "menor" and first_number > second_number:
+            score =+ 1
+        else:
+            vida =- 10
+        if vida <= 0:
+            return
+        
